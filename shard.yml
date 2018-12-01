@@ -1,0 +1,13 @@
+name: advent2018
+version: 0.1.0
+
+authors:
+  - Nathan Jones <nathanj439@gmail.com>
+
+targets:
+  advent:
+    main: src/advent.cr
+
+crystal: 0.27.0
+
+license: MIT
