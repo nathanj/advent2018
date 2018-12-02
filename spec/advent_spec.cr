@@ -8,3 +8,24 @@ describe "Day1" do
     find_repeated_frequency([+7, +7, -2, -7, -4]).should eq 14
   end
 end
+
+describe "Day2" do
+  it "finds twos and threes" do
+    find_twos_and_threes("abcdef").should eq({0, 0})
+    find_twos_and_threes("bababc").should eq({1, 1})
+    find_twos_and_threes("abbcde").should eq({1, 0})
+    find_twos_and_threes("abcccd").should eq({0, 1})
+    find_twos_and_threes("aabcdd").should eq({1, 0})
+    find_twos_and_threes("abcdee").should eq({1, 0})
+    find_twos_and_threes("ababab").should eq({0, 1})
+  end
+
+  it "calculates strdiff" do
+    strdiff("abcde", "axcye").should eq 2
+    strdiff("fghij", "fguij").should eq 1
+  end
+
+  it "finds common letters" do
+    common_letters("fghij", "fguij").should eq "fgij"
+  end
+end
