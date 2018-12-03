@@ -20,3 +20,7 @@ data.each_with_index do |a, i|
     end
   end
 end
+
+data = File.read_lines("inputs/day3.txt").map { |v| parse_claim(v) }
+puts "Day 3 Part 1: #{find_duplicate_claims(data)}"
+puts "Day 3 Part 2: #{find_nonoverlapping_claim(data).not_nil!.id}"

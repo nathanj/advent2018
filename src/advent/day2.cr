@@ -4,7 +4,7 @@ def find_twos_and_threes(id)
     occurrences[v] = occurrences.fetch(v, 0) + 1
   end
   twos = !occurrences.find { |k, v| v == 2 }.nil?
-  threes = !occurrences.find { |k, v| v == 3}.nil?
+  threes = !occurrences.find { |k, v| v == 3 }.nil?
   return {twos, threes}
 end
 
