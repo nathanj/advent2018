@@ -11,13 +11,13 @@ end
 
 describe "Day2" do
   it "finds twos and threes" do
-    find_twos_and_threes("abcdef").should eq({0, 0})
-    find_twos_and_threes("bababc").should eq({1, 1})
-    find_twos_and_threes("abbcde").should eq({1, 0})
-    find_twos_and_threes("abcccd").should eq({0, 1})
-    find_twos_and_threes("aabcdd").should eq({1, 0})
-    find_twos_and_threes("abcdee").should eq({1, 0})
-    find_twos_and_threes("ababab").should eq({0, 1})
+    find_twos_and_threes("abcdef").should eq({false, false})
+    find_twos_and_threes("bababc").should eq({true, true})
+    find_twos_and_threes("abbcde").should eq({true, false})
+    find_twos_and_threes("abcccd").should eq({false, true})
+    find_twos_and_threes("aabcdd").should eq({true, false})
+    find_twos_and_threes("abcdee").should eq({true, false})
+    find_twos_and_threes("ababab").should eq({false, true})
   end
 
   it "calculates strdiff" do
