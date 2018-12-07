@@ -32,3 +32,7 @@ puts "      Part 2: #{find_guard_part2(guard_minutes)}"
 data = File.read("inputs/day5.txt").strip
 puts "Day 5 Part 1: #{react_polymer(data).size}"
 puts "      Part 2: #{react_polymer_improved(data).size}"
+
+data = File.read_lines("inputs/day6.txt").map { |v| v.split(", ").map &.to_i }
+puts "Day 6 Part 1: #{compute_area(data)}"
+puts "      Part 2: #{compute_area_part2(data, 10000)}"
