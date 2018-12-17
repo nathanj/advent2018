@@ -36,3 +36,7 @@ puts "      Part 2: #{react_polymer_improved(data).size}"
 data = File.read_lines("inputs/day6.txt").map { |v| v.split(", ").map &.to_i }
 puts "Day 6 Part 1: #{compute_area(data)}"
 puts "      Part 2: #{compute_area_part2(data, 10000)}"
+
+data = File.read_lines("inputs/day7.txt")
+puts "Day 7 Part 1: #{compute_graph(data)}"
+puts "      Part 2: #{compute_graph_part2(data)}"
