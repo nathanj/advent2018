@@ -40,3 +40,8 @@ puts "      Part 2: #{compute_area_part2(data, 10000)}"
 data = File.read_lines("inputs/day7.txt")
 puts "Day 7 Part 1: #{compute_graph(data)}"
 puts "      Part 2: #{compute_graph_part2(data)}"
+
+data = File.read("inputs/day8.txt").strip
+tree = parse_tree_str(data)
+puts "Day 8 Part 1: #{sum_metadata(tree)}"
+puts "      Part 2: #{sum_metadata_part2(tree)}"
